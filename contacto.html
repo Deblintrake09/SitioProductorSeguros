@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html><head>
+    <title>Andres Micalizzi - Productor de Seguros</title>
+    <meta charset="utf-8" lang="es" http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=2">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="./contacto.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img src="images/logo.png" alt="logo Andres Micalizzi"> <h2 style="display: inline;">ANDRES MICALIZZI - Productor Asesor de Seguros</h2>
+        </div>
+        <div class="navbar">
+                <a class="nav-btn " href="index.html">BIENVENIDO</a>
+                <a class="nav-btn" href="productos.html">PRODUCTOS</a>
+                <a class="nav-btn active-btn" href="contacto.html">CONTACTO</a>
+        </div>
+    </header>
+
+
+<div class="central">
+    <h2>Mandá tus consultas...</h2>
+    <form name="myform" method="post" action="#" enctype="multipart/form-data" id="myform">
+        <div class="myform">
+            <div class="form-row">
+                <div class="form-column">
+                    <label for="nombre">Nombre</label>
+                    <input class="form-input" type="text" name="nombre" id="nombre" required>
+                    <label for="mail" >Mail</label>
+                    <input type="text" name="mail" id="mail" required>
+                    <label for="dni" >DNI/Patente/Póliza</label>
+                    <input type="text" name="dni" id="dni" required>
+                </div> 
+                <div class="form-column">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" size="25" id="apellido" required >
+                    <label for="tel" >Teléfono</label>
+                    <div>
+                        <span><input type="text" name="tel"  size="5" required style="max-width: 30%;"  placeholder="266">  -  
+                        <input type="text" name="tel" size="15" required style="max-width: 62%;"placeholder="(15)123456"></span>
+                    </div>
+                    <label for="consulta">Su Consulta</label>
+                    <select name="consulta" id="consulta" required>
+                        <option value="---">---</option>
+                        <option value="pago">Consulta medios de pago</option>
+                        <option value="docum">Consulta sobre documentación</option>
+                        <option value="siniestro">Consultas sobre siniestros</option>
+                        <option value="sugerencias">Sugerencias</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+            <div class="comment">
+                <label for="detalle" style="margin-bottom: 8px;">Comentario</label>
+                <textarea name="detalle" id="detalle" rows="10" required></textarea>
+            </div>
+                <input id="submit" type="submit" value="Enviar" name="submit" onclick="return validar()"> 
+        </div>
+        
+    </form>
+</div>
+
+
+
+
+
+
+<footer>
+    <div class="footer">
+            <div class="footer-column left">
+                <h3 class="title">El Sitio</h3>
+                <ul class="footerlinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer-column center">
+                <address>
+                    <h3 class="title">Contacto</h3>
+                    <p><span class="oi oi-home"></span>Caseros 1182, San Luis (Argentina)</p>
+                    <p><span class="oi oi-phone"></span>+54-9-2657-620444</p>
+                    <p><span class="oi oi-inbox"></span><a href="#">micalizzipas@gmail.com</a></p>
+                </address>
+            </div>
+            <div class="footer-column right">
+                <h3 class="title">Nuestras Redes</h3>
+                    <ul class="footerlinks">
+                        <li><a href="http://www.facebook.com">Facebook</a></li>
+                        <li><a href="http://www.twitter.com">Twitter</a></li>
+                        <li><a href="http://www.instagram.com">Instagram</a></li>
+                        <li><a href="http://www.google.com">Google+</a>
+                    </ul>
+            </div>
+    </div>
+    <span>Hecho por Andres Micalizzi - Noviembre 2020</span>
+</footer>
+
+</body>
+</html>
